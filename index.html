@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+        body {font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+                display: flex;
+                height: 100vh;
+            }
+        .profile-card {background: white;
+                        padding: 25px;
+                        width: 350px;
+                        text-align: justify center;
+                        border-radius: 15px;
+                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                        position: relative;
+                        overflow: hidden;
+                        border: 5px solid #ff758c;
+                    }
+       .profile-card::before { content: "";
+                                position: absolute;
+                                top: -40px;
+                                left: -40px;
+                                width: 100px;
+                                height: 100px;
+                                background: #ff758c;
+                                border-radius: 50%;
+                                opacity: 0.3;
+                            }
+    
+
+        .profile-card img {width: 120px;
+                            height: 120px;
+                            border-radius: 50%;
+                            border: 5px solid #ff758c;
+                            object-fit: cover;
+                             transition: transform 0.3s;
+                            }
+
+         img:hover {transform: scale(1.1);}
+
+         h1 {font-size: 22px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+         p {font-size: 15px;
+            margin: 7px 0;
+            color:#2f4965;
+        }
+
+        .social-links { margin-top: 15px;}
+
+        .social-links a {text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .social-links .facebook { background: #3b5998; }
+
+        .social-links .Instagram {background:#ff6633 ; }
+
+        .social-links a:hover { opacity: 0.8;  
+                                transform: translateY(-3px);
+                            }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="lanh.jpg" alt="html">
+        <h1>Vũ Thị Lan Anh</h1>
+        <p><strong>Giới thiệu:</strong> Xin chào mọi người, mình là Lan Anh .</p>
+        <p><strong>Nickname:</strong> Ngọt</p>
+        <p><strong>Ngày sinh:</strong> 20/10/2007</p>
+        <p><strong>Sở thích:</strong> Nghe nhạc, chơi thể thao, ngủ</p> 
+        <div class="social-links">
+            <a href="https://www.facebook.com/anh.lan.97839" class="facebook" target="_blank">Facebook</a>
+            <a href="https://www.Instagram.com/anh_lan11/" class="Instagram" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
